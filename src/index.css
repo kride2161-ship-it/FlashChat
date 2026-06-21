@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;850&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Glassmorphism & Custom theme styling */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chat-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.dark .chat-shadow {
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.45), 0 10px 15px -6px rgba(0, 0, 0, 0.4);
+}
+
+.app-bg-gradient-light {
+  background: radial-gradient(circle at 10% 20%, rgba(243, 244, 246, 1) 0%, rgba(229, 231, 235, 1) 100%);
+}
+
+.app-bg-gradient-dark {
+  background: radial-gradient(circle at 12.3% 19.3%, rgba(8, 10, 18, 1) 0%, rgba(15, 18, 30, 1) 100%);
+}
+
+/* Custom transitions and animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.sidebar-active {
+  background-color: white;
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.03);
+}
+
+.dark .sidebar-active {
+  background-color: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+  outline: none;
+}
+

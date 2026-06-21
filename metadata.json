@@ -1,0 +1,6 @@
+{
+  "name": "FlashChat",
+  "description": "A modern, responsive, and beautifully designed web messenger featuring glassmorphism elements, intuitive contact-code sharing, light/dark modes, and sleek transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
